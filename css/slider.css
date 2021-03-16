@@ -2,7 +2,8 @@
     display: block;
     width: 100%;
     float: left;
-    position: relative;
+    height: 500px;
+    margin-bottom: 40px;
 }
 
 .slider .slider_item{
@@ -150,7 +151,7 @@
       line-height: 45px;
       font-size: 2em;
   }
-  .slider .slider_item{
+  .slider, .slider .slider_item{
       height: 400px;
   }
   .slider .slider_content{
@@ -174,7 +175,7 @@
       line-height: 45px;
       font-size: 2em;
   }
-  .slider .slider_item{
+  .slider, .slider .slider_item{
       height: 400px;
   }
   .slider .slider_content{
