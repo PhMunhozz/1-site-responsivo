@@ -11,14 +11,20 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/conteudo.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script type="text/javascript" src="js/responsive-nav.js"></script>
-
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
 
-    <div class="cabeca">
-        
+    <div class="cabeca" id="myCabeca">
+        <div class="social">
+            <img src="images/social/youtube.png" alt="">
+            <img src="images/social/facebook.png" alt="">
+            <img src="images/social/network.png" alt="">
+
+        </div>
     </div>
     <!--DIV PARA NAVEGAÇÃO PRINCIPAL-->
     <div class="topnav" id="myTopnav">
@@ -39,7 +45,7 @@
         <section class="slider">
             <div class="slider_box">
 
-                <article class="slider_item active" data-slider-bg="images/slide1.jpg">
+                <article class="slider_item active" data-slider-bg="images/slider/slide1.jpg">
                     <div class="slider_content">
                         <h2>Primeiro Título</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tempore accusantium mollitia
@@ -47,7 +53,7 @@
                     </div>
                 </article>
 
-                <article class="slider_item" data-slider-bg="images/slide2.jpg">
+                <article class="slider_item" data-slider-bg="images/slider/slide2.jpg">
                     <div class="slider_content">
                         <h2>Segundo Título</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam tempore dicta odio.
@@ -56,7 +62,7 @@
                     </div>
                 </article>
 
-                <article class="slider_item" data-slider-bg="images/slide3.jpg">
+                <article class="slider_item" data-slider-bg="images/slider/slide3.jpg">
                     <div class="slider_content">
                         <h2>Terceiro Título</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex facere vitae neque nemo
@@ -65,7 +71,7 @@
                     </div>
                 </article>
 
-                <article class="slider_item" data-slider-bg="images/slide4.jpg">
+                <article class="slider_item" data-slider-bg="images/slider/slide4.jpg">
                     <div class="slider_content">
                         <h2>Quarto Título</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, et maiores facilis itaque,
@@ -74,7 +80,7 @@
                     </div>
                 </article>
 
-                <article class="slider_item" data-slider-bg="images/slide5.jpg">
+                <article class="slider_item" data-slider-bg="images/slider/slide5.jpg">
                     <div class="slider_content">
                         <h2>Quinto Título</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est exercitationem at sit sint
@@ -91,45 +97,159 @@
         <h2>Jogos em Destaque</h2>
         <div class="row">
             <div class="column">
-                <img src="images/jogos/fifa.jpg">
+                <img src="images/jogos/fifa21.jpg">
+                <span></span>
             </div>
 
             <div class="column">
                 <img src="images/jogos/mk11.jpg">
+                <span></span>
             </div>
 
             <div class="column">
                 <img src="images/jogos/cod.jpg">
+                <span></span>
             </div>
 
             <div class="column">
                 <img src="images/jogos/assassins.jpg">
+                <span></span>
             </div>
 
             <div class="column">
                 <img src="images/jogos/rdr2.jpg">
+                <span></span>
             </div>
 
             <div class="column">
                 <img src="images/jogos/sea.jpg">
+                <span></span>
             </div>
-            <!-- <img src="images/jogos/fifa.jpg">
-            <img src="images/jogos/mk11.jpg">
-            <img src="images/jogos/cod.jpg">
-            <img src="images/jogos/assassins.jpg">
-            <img src="images/jogos/rdr2.jpg">
-            <img src="images/jogos/sea.jpg"> -->
+
         </div>
 
+        <div class="txt-left hide">
+            <h2>Atualizações Recentes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam accusantium asperiores sunt,
+                ullam temporibus. Expedita tenetur suscipit quas, omnis eaque excepturi atque esse provident, unde sint
+                ratione, delectus architecto!</p>
+
+            <h3>FIFA 2021 <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <hr>
+            <h3>Mortal Kombat 11 <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <hr>
+            <h3>Call of Duty Black Ops: Cold War <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <h3>Assassin's Creed: Valhalla <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <hr>
+            <h3>Red Dead Redemption II <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div>
+            <hr>
+            
+            <div class="att">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit corrupti voluptatibus placeat ea
+                    excepturi neque nobis itaque aperiam soluta! Culpa pariatur facere mollitia! Sapiente, quia.
+                    Corporis
+                    laboriosam hic omnis quas?</p>
+                <ul>
+                    <li>Att 1</li>
+                    <li>Att 2</li>
+                    <li>Att 3</li>
+                    <li>Att 4</li>
+                </ul>
+            </div><h3>Sea of Thieves <img class="icon" src="images/icons/expand-more.png" alt=""></h3>
+        </div>
+        <input type="button" id="button" value="Ver mais" />
 
 
 
+
+        <footer>
+            <p class="txt-left">Entre em contato:<br>paulo.munhoz@aluno.unincor.edu.br</p>
+            <hr class="hr" width="30%" color="#f0f0f0">
+            <p class="txt-center">&copy;Copyright Paulo Munhoz - 7º Período CPU</p>
+        </footer>
     </div>
 
 
 
-        <script src="js/jquery.js"></script>
-        <script src="js/slider.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript" src="js/content.js"></script>
+
 
 </body>
 

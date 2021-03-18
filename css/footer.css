@@ -1,0 +1,13 @@
+footer {
+    font-size: 15px;
+    color: white;
+    overflow: auto;
+    background-color: #000;
+    clear: both;
+}
+footer p{
+    margin: 20px 0;
+}
+footer .hr {
+    margin: 0 auto;
+}

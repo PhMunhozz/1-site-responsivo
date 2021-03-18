@@ -19,7 +19,23 @@
         display: block;
         float: left;
         width: 100%;
-        margin-top: 60px
+        margin-top: 60px;
+        position: absolute;
+        top: 40px;
+        text-align: center;
     }
     /* .content{display: block; margin:0 auto; max-width: 1280px;} */
     .hide{display:none;}
+    .txt-left {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .txt-center {
+        text-align: center;
+    }   
+
+    @media screen and (max-width: 600px) {
+        .container{
+            top: 25px;
+        }
+    }
